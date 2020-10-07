@@ -1,0 +1,54 @@
+---
+title: '1007'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+a <- 15
+b <- a
+vNum1 <- c(2,5)
+
+vNum1 <- vNum2
+vNum2 <- c(2, vNum1)
+```
+
+
+```{r}
+
+#vector learning
+
+
+heightsOftheEntireClassroom <- c()
+
+#each student's height
+heightsOftheEntireClassroom2 <- c()
+heightOfAStudentComingInsideTheClassroom <- sample(165:200,1)
+
+# method 1: concatenate 
+heightsOftheEntireClassroom <-
+  c(
+    heightsOftheEntireClassroom,
+    heightOfAStudentComingInsideTheClassroom
+  )
+
+# method 2:
+heightsOftheEntireClassroom2 <-
+  heightOfAStudentComingInsideTheClassroom
+
+
+```
+
+```{r}
+#character
+
+dl <- '小明說:"明天不用上課。"'
+
+context <- "老師說換行要寫\\n"
+cat(context)
+
+```
