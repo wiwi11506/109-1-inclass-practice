@@ -1,0 +1,40 @@
+---
+title: "2020-11-4"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+board = "gossiping"
+author = "a125g"
+title = "[問卦] 美國的民調是不是個笑話？？"
+content = "今年美國民調每次都開拜登大勝1x%
+
+2016年也是川普大勝希婆，
+
+上次希婆雖然選舉人票輸，但總票數大贏，還能說得過去，
+
+這次民調差10%，川普跟拜登兩人的總票數也沒差多少
+
+民調冷冰冰 人心暖呼呼都是真的
+
+請問有沒有美國的民調就是個笑話的八卦？？"
+
+
+```
+
+```{r}
+library(lubridate)
+
+electoral_college_vote <- list(
+  time = ymd_hm("2020-11-03 14:49 "),
+  vote = list(
+  Trump = '213',
+  Biden = '224'
+                )
+)
+
+```
